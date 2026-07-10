@@ -1,11 +1,11 @@
 # This template CITATION.cff file was generated with cffinit.
 # Visit https://bit.ly/cffinit to replace its contents
 # with information about your lesson.
-# Remember to update this file periodically, 
+# Remember to update this file periodically,
 # ensuring that the author list and other fields remain accurate.
 
 cff-version: 1.2.0
-title: FIXME
+title: Introduction to machine learning for geospatial data
 message: >-
   Please cite this lesson using the information in this file
   when you refer to it in publications, and/or if you
@@ -13,10 +13,20 @@ message: >-
   training material.
 type: dataset
 authors:
-  - given-names: FIXME
-    family-names: FIXME
+  - given-names: Sarah
+    family-names: Alidoost
+  - given-names: Rosa
+    family-names: Aguilar
+  - given-names: Raul
+    family-names: Zurita Milla
+  - given-names: Ellen-Wien
+    family-names: Augustijn
+  - given-names: Gabriele
+    family-names: Tijunaityte
+
 abstract: >-
-  FIXME Replace this with a short abstract describing the
-  lesson, e.g. its target audience and main intended
-  learning objectives.
+  This lesson introduces the fundamental concepts of machine learning (ML) and
+  its applications in geospatial data analysis. It covers the basics of ML
+  algorithms, basics of geospatial data, and models, providing learners with
+  practical skills to apply ML methods to geospatial datasets.
 license: CC-BY-4.0
