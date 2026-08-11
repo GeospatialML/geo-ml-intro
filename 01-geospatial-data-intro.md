@@ -48,7 +48,7 @@ basics of geospatial data and analysis using Python. Make sure that you have
 followed the setup instructions in the [lesson setup](../learners/setup.md) page
 before proceeding.
 
-### Geospatial Data Structures and Formats
+## Geospatial Data Structures and Formats
 
 When we talk about formats of geospatial data, we are referring to the different
 ways in which geographic information can be represented. There are several
@@ -111,7 +111,7 @@ Data](https://esciencecenter-digital-skills.github.io/geospatial-python/02-intro
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
-## Challenge 1: the format of our dataset
+### Challenge 1: the format of our dataset
 
 Look at [the dataset](../learners/setup.md) we will be using in this lesson.
 What format is it in? Is it a raster, vector, tabular, database, or trajectory
@@ -125,11 +125,137 @@ format? How do you know?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
+### Geospatial data visualization
+
+Reading and visualizing the dataset using xarray and geopandas....
+
+## Geographic phenomena
+
+Geographic phenomena can be represented in different data formats depending on
+the nature of the phenomenon and the type of analysis being conducted. For
+example, a raster format is used to represent temperature or precipitation data,
+while a vector format is used to represent the locations of cities or rivers.
+Tabular formats are used to store demographic data, while TINs are used to
+represent terrain and elevation data. Point clouds are used to represent 3D
+models of buildings or landscapes, while databases may be used to store large
+amounts of geospatial data for efficient querying and analysis. Trajectories are
+used to represent the movement of objects over time, such as the migration
+patterns of animals or the movement of vehicles.
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+### Challenge 2: the geographic phenomena in our dataset
+
+Look at [the dataset](../learners/setup.md) we will be using in this lesson.
+What geographic phenomena are represented in this dataset? We can read the
+dataset using xarray and geopandas to visualize the data and identify the
+geographic phenomena.
+
+:::::::::::::::::::::::: solution
+
+## Answer
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Spatial-temporal data
+
+Usually geospatial data is not only spatial but also temporal. This means that
+the data has a time component, allowing us to analyze how geographic phenomena
+change over time. A sequence of data points collected over time is called a
+timeseries, and can be used to analyze trends, patterns, and relationships in
+the data. For example a timeseries of satellite imagery can be used to monitor
+changes in land use or vegetation cover over time, while a timeseries of GPS
+data can be used to track the movement of an object.
+
+We often use standard formats and a coordinate reference system to represent
+location and time information.
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+### Challenge 3: Spatial-temporal information in our dataset
+
+Look at [the dataset](../learners/setup.md) we will be using in this lesson.
+What spatial-temporal information is represented in this dataset? We can read the
+dataset using xarray and geopandas to visualize the data and identify the
+spatial-temporal information.
+
+:::::::::::::::::::::::: solution
+
+## Answer
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: callout
+
+To learn more about coordinate reference system, check out these lessons:
+
+- [Coordinate Reference
+  Systems](https://esciencecenter-digital-skills.github.io/geospatial-python/03-crs.html).
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+## Data types and their properties
+
+Until now we have discussed the different formats of geospatial data, but it is
+also important to understand the different data types and their properties. Data
+types refer to the different kinds of values that can be stored in a dataset,
+such as integers, floats, strings or categorical, and booleans. Each data type
+has its own properties and limitations, which can affect how the data is
+analyzed and stored.
+
+### Range, distribution, missing values, and outliers
+
+When computing some statistics on geospatial data, or visualizing it, we may
+want to know the range of values, the distribution of values, and whether there
+are any missing values or outliers in the dataset. Sometimes these information
+are provided in the metadata of the dataset, but sometimes we need to compute
+them ourselves.
+
+Missing values can occur when data is not collected or recorded for a particular
+location or time period, and can be represented as NaN (Not a Number) or null
+values in the dataset. Outliers are values that are significantly different from
+the rest of the data and can skew our analysis. In most of the applications, we
+identify and handle missing values and outliers appropriately, either by
+removing them from the dataset or imputing them with estimated values based on
+the surrounding data.
+
+### Handling missing values and outliers
+
+Reading and visualizing the dataset using xarray and geopandas....
 
 
+::::::::::::::::::::::::::::::::::::: challenge
+
+### Challenge 4: Removing missing values and outliers in our dataset
+
+Look at [the dataset](../learners/setup.md) we will be using in this lesson.
+What spatial-temporal information is represented in this dataset? We can read the
+dataset using xarray and geopandas to visualize the data and identify the
+spatial-temporal information.
+
+:::::::::::::::::::::::: solution
+
+## Answer
+
+:::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-
+- Geospatial data refers to information that has a geographic component, meaning
+  it can be mapped to a specific location on the Earth's surface.
+- There are several structures and formats of geospatial data, including raster,
+  vector, tabular, TINs, point clouds, databases, and trajectories.
+- Geographic phenomena can be represented in different data formats depending on
+  the nature of the phenomenon and the type of analysis being conducted.
+- Spatial-temporal data has a time component that allows for the analysis of how
+  geographic phenomena change over time.
+- Data types refer to the different kinds of values that can be stored in a
+- dataset, such as integers, floats, strings or categorical, and booleans.
 ::::::::::::::::::::::::::::::::::::::::::::::::
