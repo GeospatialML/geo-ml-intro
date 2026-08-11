@@ -21,7 +21,7 @@ exercises: 2 # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+## Geospatial data
 
 Data is everywhere, and geospatial data is no exception. Geospatial data refers
 to information that has a geographic component, meaning it can be mapped to a
@@ -35,6 +35,7 @@ management, and food security for a growing global population.
 ![Observing the Earth: Greece continues to battle
 wildfires](fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg){alt="Observing
 the Earth"}
+
 Source: [The European Space Agency (ESA), Copernicus Sentinel-2
 image](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026).
 
@@ -51,7 +52,7 @@ basics of geospatial data and analysis using Python. Make sure that you have
 followed the setup instructions in the [lesson setup](../learners/setup.md) page
 before proceeding.
 
-## Geospatial data Structures and Formats
+## Data structures and formats
 
 When we talk about formats of geospatial data, we are referring to the different
 ways in which geographic information can be represented. There are several
@@ -128,7 +129,7 @@ format? How do you know?
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-### Geospatial data visualization
+### Data visualization
 
 Reading and visualizing the dataset using xarray and geopandas....
 
@@ -226,19 +227,23 @@ identify and handle missing values and outliers appropriately, either by
 removing them from the dataset or imputing them with estimated values based on
 the surrounding data.
 
-### Handling missing values and outliers
+We will discuss how to prepare data in [episode 3](./03-data-preparation.md),
+but for now we will just visualize the data and identify any missing values or
+outliers in the dataset.
+
+### Identifying missing values and outliers
 
 Reading and visualizing the dataset using xarray and geopandas....
 
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
-### Challenge 4: Removing missing values and outliers in our dataset
+### Challenge 4: Missing values and outliers in our dataset
 
 Look at [the dataset](../learners/setup.md) we will be using in this lesson.
-What spatial-temporal information is represented in this dataset? We can read the
-dataset using xarray and geopandas to visualize the data and identify the
-spatial-temporal information.
+What missing values and outliers are represented in this dataset? We can read
+the dataset using xarray and geopandas to visualize the data and identify the
+missing values and outliers.
 
 :::::::::::::::::::::::: solution
 
