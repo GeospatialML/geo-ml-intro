@@ -23,14 +23,31 @@ exercises: 2 # exercise time in minutes
 
 ## Introduction
 
-In this lesson ....
+Data is everywhere, and geospatial data is no exception. Geospatial data refers
+to information that has a geographic component, meaning it can be mapped to a
+specific location on the Earth's surface. Think of satellite imagery, aircrafts,
+UAVs, GPS devices, mobile phones, and even social media platforms that collect
+GPS coordinates. This type of data is crucial for understanding spatial
+relationships and is invaluable for solving some of the greatest challenges,
+including climate change adaptation, natural disaster monitoring, water resource
+management, and food security for a growing global population.
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+![Observing the Earth: Greece continues to battle wildfires](fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg){alt="Observing the Earth"}
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+Source: [The European Space Agency (ESA), Copernicus Sentinel-2 image](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026)
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+But how do we represent geospatial data? This is what we will explore in this
+lesson. We will discuss the different formats of geospatial data, how geographic
+phenomena can be represented in these formats, and the concept of
+spatial-temporal data.
+
+To get started, we need to use a programming language that can read geospatial
+data and visualize it. In this lesson, we will use Python, a popular programming
+language that has a rich ecosystem of open-source libraries for data science and
+geospatial analysis. In the sections that follow, we will introduce you to the
+basics of geospatial data and analysis using Python. Make sure that you have
+followed the setup instructions in the [lesson setup](../learners/setup.md) page
+before proceeding.
 
 ::::::::::::::::::::::::::::::::::::: challenge
 
