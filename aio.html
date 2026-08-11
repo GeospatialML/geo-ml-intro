@@ -424,9 +424,9 @@ follow, we will introduce you to the basics of geospatial data and
 analysis using Python. Make sure that you have followed the setup
 instructions in the <a href="index.html#setup">lesson setup</a> page before
 proceeding.</p>
-<div class="section level3">
-<h3 id="geospatial-data-structures-and-formats">Geospatial Data Structures and Formats<a class="anchor" aria-label="anchor" href="#geospatial-data-structures-and-formats"></a>
-</h3>
+</section><section><h2 class="section-heading" id="geospatial-data-structures-and-formats">Geospatial Data Structures and Formats<a class="anchor" aria-label="anchor" href="#geospatial-data-structures-and-formats"></a>
+</h2>
+<hr class="half-width">
 <p>When we talk about formats of geospatial data, we are referring to
 the different ways in which geographic information can be represented.
 There are several formats, each with its own advantages and use cases.
@@ -516,6 +516,175 @@ or trajectory format? How do you know?</p>
 </div>
 </div>
 </div>
+<div class="section level3">
+<h3 id="geospatial-data-visualization">Geospatial data visualization<a class="anchor" aria-label="anchor" href="#geospatial-data-visualization"></a>
+</h3>
+<p>Reading and visualizing the dataset using xarray and geopandas….</p>
+</div>
+</section><section><h2 class="section-heading" id="geographic-phenomena">Geographic phenomena<a class="anchor" aria-label="anchor" href="#geographic-phenomena"></a>
+</h2>
+<hr class="half-width">
+<p>Geographic phenomena can be represented in different data formats
+depending on the nature of the phenomenon and the type of analysis being
+conducted. For example, a raster format is used to represent temperature
+or precipitation data, while a vector format is used to represent the
+locations of cities or rivers. Tabular formats are used to store
+demographic data, while TINs are used to represent terrain and elevation
+data. Point clouds are used to represent 3D models of buildings or
+landscapes, while databases may be used to store large amounts of
+geospatial data for efficient querying and analysis. Trajectories are
+used to represent the movement of objects over time, such as the
+migration patterns of animals or the movement of vehicles.</p>
+<div id="challenge-2-the-geographic-phenomena-in-our-dataset" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-2-the-geographic-phenomena-in-our-dataset" class="callout-inner">
+<h3 class="callout-title">Challenge 2: the geographic phenomena in our
+dataset</h3>
+<div class="callout-content">
+<p>Look at <a href="index.html#setup">the dataset</a> we will be using in this
+lesson. What geographic phenomena are represented in this dataset? We
+can read the dataset using xarray and geopandas to visualize the data
+and identify the geographic phenomena.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
+  <h4 class="accordion-header" id="headingSolution2">
+  Answer
+  </h4>
+</button>
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div class="accordion-body">
+
+</div>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="spatial-temporal-data">Spatial-temporal data<a class="anchor" aria-label="anchor" href="#spatial-temporal-data"></a>
+</h2>
+<hr class="half-width">
+<p>Usually geospatial data is not only spatial but also temporal. This
+means that the data has a time component, allowing us to analyze how
+geographic phenomena change over time. A sequence of data points
+collected over time is called a timeseries, and can be used to analyze
+trends, patterns, and relationships in the data. For example a
+timeseries of satellite imagery can be used to monitor changes in land
+use or vegetation cover over time, while a timeseries of GPS data can be
+used to track the movement of an object.</p>
+<p>We often use standard formats and a coordinate reference system to
+represent location and time information.</p>
+<div id="challenge-3-spatial-temporal-information-in-our-dataset" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-3-spatial-temporal-information-in-our-dataset" class="callout-inner">
+<h3 class="callout-title">Challenge 3: Spatial-temporal information in
+our dataset</h3>
+<div class="callout-content">
+<p>Look at <a href="index.html#setup">the dataset</a> we will be using in this
+lesson. What spatial-temporal information is represented in this
+dataset? We can read the dataset using xarray and geopandas to visualize
+the data and identify the spatial-temporal information.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution3" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
+  <h4 class="accordion-header" id="headingSolution3">
+  Answer
+  </h4>
+</button>
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div class="accordion-body">
+
+</div>
+</div>
+</div>
+</div>
+<div id="callout2" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<span class="callout-header">Callout</span>
+<div class="callout-inner">
+<div class="callout-content">
+<p>To learn more about coordinate reference system, check out these
+lessons:</p>
+<ul>
+<li>
+<a href="https://esciencecenter-digital-skills.github.io/geospatial-python/03-crs.html" class="external-link">Coordinate
+Reference Systems</a>.</li>
+</ul>
+</div>
+</div>
+</div>
+</section><section><h2 class="section-heading" id="data-types-and-their-properties">Data types and their properties<a class="anchor" aria-label="anchor" href="#data-types-and-their-properties"></a>
+</h2>
+<hr class="half-width">
+<p>Until now we have discussed the different formats of geospatial data,
+but it is also important to understand the different data types and
+their properties. Data types refer to the different kinds of values that
+can be stored in a dataset, such as integers, floats, strings or
+categorical, and booleans. Each data type has its own properties and
+limitations, which can affect how the data is analyzed and stored.</p>
+<div class="section level3">
+<h3 id="range-distribution-missing-values-and-outliers">Range, distribution, missing values, and outliers<a class="anchor" aria-label="anchor" href="#range-distribution-missing-values-and-outliers"></a>
+</h3>
+<p>When computing some statistics on geospatial data, or visualizing it,
+we may want to know the range of values, the distribution of values, and
+whether there are any missing values or outliers in the dataset.
+Sometimes these information are provided in the metadata of the dataset,
+but sometimes we need to compute them ourselves.</p>
+<p>Missing values can occur when data is not collected or recorded for a
+particular location or time period, and can be represented as NaN (Not a
+Number) or null values in the dataset. Outliers are values that are
+significantly different from the rest of the data and can skew our
+analysis. In most of the applications, we identify and handle missing
+values and outliers appropriately, either by removing them from the
+dataset or imputing them with estimated values based on the surrounding
+data.</p>
+</div>
+<div class="section level3">
+<h3 id="handling-missing-values-and-outliers">Handling missing values and outliers<a class="anchor" aria-label="anchor" href="#handling-missing-values-and-outliers"></a>
+</h3>
+<p>Reading and visualizing the dataset using xarray and geopandas….</p>
+<div id="challenge-4-removing-missing-values-and-outliers-in-our-dataset" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-4-removing-missing-values-and-outliers-in-our-dataset" class="callout-inner">
+<h3 class="callout-title">Challenge 4: Removing missing values and
+outliers in our dataset</h3>
+<div class="callout-content">
+<p>Look at <a href="index.html#setup">the dataset</a> we will be using in this
+lesson. What spatial-temporal information is represented in this
+dataset? We can read the dataset using xarray and geopandas to visualize
+the data and identify the spatial-temporal information.</p>
+</div>
+</div>
+</div>
+<div id="accordionSolution4" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution4" aria-expanded="false" aria-controls="collapseSolution4">
+  <h4 class="accordion-header" id="headingSolution4">
+  Answer
+  </h4>
+</button>
+<div id="collapseSolution4" class="accordion-collapse collapse" aria-labelledby="headingSolution4" data-bs-parent="#accordionSolution4">
+<div class="accordion-body">
+
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -523,7 +692,23 @@ or trajectory format? How do you know?</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-
+<ul>
+<li>Geospatial data refers to information that has a geographic
+component, meaning it can be mapped to a specific location on the
+Earth’s surface.</li>
+<li>There are several structures and formats of geospatial data,
+including raster, vector, tabular, TINs, point clouds, databases, and
+trajectories.</li>
+<li>Geographic phenomena can be represented in different data formats
+depending on the nature of the phenomenon and the type of analysis being
+conducted.</li>
+<li>Spatial-temporal data has a time component that allows for the
+analysis of how geographic phenomena change over time.</li>
+<li>Data types refer to the different kinds of values that can be stored
+in a</li>
+<li>dataset, such as integers, floats, strings or categorical, and
+booleans.</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1090,7 +1275,7 @@ performance of models</li>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1"> Output </h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1119,7 +1304,7 @@ challenge blocks?</h3>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
 <p>You can add a line with at least three colons and a
 <code>solution</code> tag.</p>
