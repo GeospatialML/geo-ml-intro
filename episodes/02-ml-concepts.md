@@ -23,82 +23,51 @@ exercises: 2 # exercise time in minutes
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
-## Introduction
+## Machine learning
 
-In this lesson ....
+In data analysis, we often define a mathematical algorithm to show the
+relationship between a set of input variables and an output variable. This is
+called a model. In mathematical notation, the predicted value $\hat{y}$ can be
+written as:
 
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: instructor
+$\hat{y}(w, x) = w_0 + w_1 x_1 + \dots + w_n x_n$
 
-Inline instructor notes can help inform instructors of timing challenges
-associated with the lessons. They appear in the "Instructor View"
+Where $w$ are the model parameters, $x$ are the input variables. We can adjust
+the model parameters $w$ to improve how well the model can produce the output
+variable from the input variables. Therefore, we are interested in the
+difference between the predicted value $\hat{y}$ and the true value $y$. This is
+called the "error", and we can write its magnitude as:
 
-::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
+$e = |y - \hat{y}|$
 
-::::::::::::::::::::::::::::::::::::: challenge
+The process of adjusting the model parameters to minimize the error is called
+"training" the model. One way to do this is to use a lot of samples of input and
+output data, and use an "optimization" algorithm to find the best model
+parameters that minimize the error. This is called "fitting" the model to the
+data. In other words, the model "learns" from the data by adjusting its
+parameters to minimize the error. When we find the best model parameters that
+minimize the error, we can use the model to make predictions (or inferences) on
+new data.
 
-## Challenge 1: Can you do it?
+The whole process of training a model, defining optimization algorithms, and
+using the model to make predictions is called [machine learning
+(ML)](https://en.wikipedia.org/wiki/Machine_learning) and it is a subset of
+artificial intelligence (AI): all machine learning is AI, but not all AI is
+machine learning.
 
-What is the output of this command?
+Geospatial ML is the application of machine learning techniques to data with a
+spatial and spatio-temporal components.
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+Machine learning is a powerful tool for geospatial analytics because it can
+leverage large amounts of spatial data, time series data, satellite and aerial
+imagery, or any other form of geographic information to do tasks such as
+predictions, classification, or identifying patterns in the data. The
+application of machine learning to geospatial data is vast; for example,
+predicting the spread of wildfires, classifying land cover types, or identifying
+areas at risk of flooding.
 
-:::::::::::::::::::::::: solution
-
-## Output
-
-```output
-[1] "This new lesson looks good"
-```
-
-:::::::::::::::::::::::::::::::::
-
-
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use standard markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
-
-::::::::::::::::::::::::::::::::::::: callout
-
-Callout sections can highlight information.
-
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides":
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
-
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-
-## Math
-
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
-
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
