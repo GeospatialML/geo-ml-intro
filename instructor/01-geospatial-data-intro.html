@@ -210,8 +210,6 @@
     <div id="flush-collapsecurrent" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushcurrent">
       <div class="accordion-body">
         <ul><li><a href="#introduction">Introduction</a></li>
-<li><a href="#figures">Figures</a></li>
-<li><a href="#math">Math</a></li>
         </ul></div><!--/div.accordion-body-->
     </div><!--/div.accordion-collapse-->
 
@@ -372,9 +370,7 @@ is crucial for understanding spatial relationships and is invaluable for
 solving some of the greatest challenges, including climate change
 adaptation, natural disaster monitoring, water resource management, and
 food security for a growing global population.</p>
-<figure><img src="../fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg" alt="Observing the Earth" class="figure mx-auto d-block"><div class="figcaption">Observing the Earth: Greece continues to battle
-wildfires</div>
-</figure><p>Source: <a href="https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026" class="external-link">The
+<p><img src="../fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg" alt="Observing the Earth" class="figure"> Source: <a href="https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026" class="external-link">The
 European Space Agency (ESA), Copernicus Sentinel-2 image</a></p>
 <p>But how do we represent geospatial data? This is what we will explore
 in this lesson. We will discuss the different formats of geospatial
@@ -388,92 +384,93 @@ follow, we will introduce you to the basics of geospatial data and
 analysis using Python. Make sure that you have followed the setup
 instructions in the <a href="index.html#setup">lesson setup</a> page before
 proceeding.</p>
-<div id="challenge-1-can-you-do-it" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-1-can-you-do-it" class="callout-inner">
-<h3 class="callout-title">Challenge 1: Can you do it?</h3>
-<div class="callout-content">
-<p>What is the output of this command?</p>
-<div class="codewrapper sourceCode" id="cb1">
-<h3 class="code-label">R<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">paste</span><span class="op">(</span><span class="st">"This"</span>, <span class="st">"new"</span>, <span class="st">"lesson"</span>, <span class="st">"looks"</span>, <span class="st">"good"</span><span class="op">)</span></span></code></pre>
-</div>
-</div>
-</div>
-</div>
-<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
-  <h4 class="accordion-header" id="headingSolution1"> Output </h4>
-</button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
-<div class="accordion-body">
-<div class="codewrapper">
-<h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="output" tabindex="0"><code>[1] "This new lesson looks good"</code></pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout challenge">
-<div class="callout-square">
-<i class="callout-icon" data-feather="zap"></i>
-</div>
-<span class="callout-header">Challenge</span>
-<div id="challenge-2-how-do-you-nest-solutions-within-challenge-blocks" class="callout-inner">
-<h3 class="callout-title">Challenge 2: how do you nest solutions within
-challenge blocks?</h3>
-<div class="callout-content">
-
-</div>
-</div>
-</div>
-<div id="accordionSolution2" class="accordion challenge-accordion accordion-flush">
-<div class="accordion-item">
-<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
-  <h4 class="accordion-header" id="headingSolution2"> Show me the solution </h4>
-</button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
-<div class="accordion-body">
-<p>You can add a line with at least three colons and a
-<code>solution</code> tag.</p>
-</div>
-</div>
-</div>
-</div>
-</section><section><h2 class="section-heading" id="figures">Figures<a class="anchor" aria-label="anchor" href="#figures"></a></h2>
-<hr class="half-width"><p>You can use standard markdown for static figures with the following
-syntax:</p>
-<p><code>![optional caption that appears below the figure](figure url){alt='alt text for accessibility purposes'}</code></p>
-<figure><img src="https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg" alt="Blue Carpentries hex person logo with no text." class="figure mx-auto d-block"><div class="figcaption">You belong in The Carpentries!</div>
-</figure><div id="callout1" class="callout">
+<div class="section level3">
+<h3 id="geospatial-data-structures-and-formats">Geospatial Data Structures and Formats<a class="anchor" aria-label="anchor" href="#geospatial-data-structures-and-formats"></a></h3>
+<p>When we talk about formats of geospatial data, we are referring to
+the different ways in which geographic information can be represented.
+There are several formats, each with its own advantages and use cases.
+Some of the most common formats include:</p>
+<ul><li><p><strong>Raster data</strong>: These formats represent geographic
+information as a grid of cells or pixels, where each cell has a value
+representing a specific attribute. Sometimes, raster data can be a group
+of images/bands that represent different attributes of the same
+geographic area. Common raster formats include <a href="https://www.earthdata.nasa.gov/about/esdis/esco/standards-practices/geotiff" class="external-link">GeoTIFF
+(.tif)</a>, <a href="https://www.earthdata.nasa.gov/about/esdis/esco/standards-practices/netcdf-classic-64-bit-offset-file-formats" class="external-link">NetCDF
+(.nc)</a>, and <a href="https://www.hdfgroup.org/solutions/hdf5/" class="external-link">HDF5
+(.hdf5)</a>.</p></li>
+<li><p><strong>Vector data</strong>: These formats represent geographic
+features as points, lines, and polygons. Common vector formats include
+<a href="https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/what-is-a-shapefile.htm" class="external-link">Shapefiles
+(.shp)</a>, <a href="https://geojson.org/" class="external-link">GeoJSON (.geojson)</a>, and
+<a href="https://www.ogc.org/standards/kml/" class="external-link">KML (.kml)</a>.</p></li>
+<li><p><strong>Tabular data</strong>: These formats store geographic
+information in a tabular structure, often with latitude and longitude
+coordinates. Common tabular formats include <a href="https://data.europa.eu/apps/data-visualisation-guide/csv-files" class="external-link">CSV
+(.csv)</a>.</p></li>
+<li><p><strong>Triangulated Irregular Networks (TINs)</strong>: These
+formats represent geographic surfaces as a network of interconnected
+triangles. TINs are often used for representing terrain and elevation
+data. One of the common TIN formats is <a href="https://www.ogc.org/standards/las/" class="external-link">LAS (.las)</a>.</p></li>
+<li><p><strong>Point Clouds</strong>: These formats represent geographic
+features as a collection of points in three-dimensional space. Point
+clouds are often used for representing 3D models of buildings,
+landscapes, and other objects. Common point cloud formats include <a href="https://www.ogc.org/standards/las/" class="external-link">LAS (.las)</a>.</p></li>
+<li><p><strong>Databases</strong>: These formats store geographic
+information in a database, allowing for efficient querying and analysis.
+Common database formats include <a href="https://postgis.net/" class="external-link">PostGIS
+(an extension of PostgreSQL)</a> and <a href="https://www.gaia-gis.it/fossil/libspatialite/index" class="external-link">SpatiaLite (an
+extension of SQLite)</a>.</p></li>
+<li><p><strong>Trajectories</strong>: These formats store the movement
+of objects over time, often with timestamps and coordinates. Common
+trajectory formats include <a href="https://wiki.openstreetmap.org/wiki/GPX" class="external-link">GPX (.gpx)</a> and <a href="https://data.europa.eu/apps/data-visualisation-guide/csv-files" class="external-link">CSV
+(.csv)</a>.</p></li>
+</ul><p><img src="../fig/e01/Geospatial_Data_Structures_Formats.jpg" alt="Data Structures and Formats" class="figure">; license: CC BY-SA 4.0.</p>
+<div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
 </div>
 <span class="callout-header">Callout</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>Callout sections can highlight information.</p>
-<p>They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present “asides”: content that is
-not central to the narrative of the lesson, e.g. by providing the answer
-to a commonly-asked question.</p>
+<p>To learn more about raster and vector data, check out these
+lessons:</p>
+<ul><li>
+<a href="https://esciencecenter-digital-skills.github.io/geospatial-python/01-intro-raster-data.html" class="external-link">Introduction
+to Raster Data</a>.</li>
+<li>
+<a href="https://esciencecenter-digital-skills.github.io/geospatial-python/02-intro-vector-data.html" class="external-link">Introduction
+to Vector Data</a>.</li>
+</ul></div>
+</div>
+</div>
+<div id="challenge-1-the-format-of-our-dataset" class="callout challenge">
+<div class="callout-square">
+<i class="callout-icon" data-feather="zap"></i>
+</div>
+<span class="callout-header">Challenge</span>
+<div id="challenge-1-the-format-of-our-dataset" class="callout-inner">
+<h3 class="callout-title">Challenge 1: the format of our dataset</h3>
+<div class="callout-content">
+<p>Look at <a href="index.html#setup">the dataset</a> we will be using in this
+lesson. What format is it in? Is it a raster, vector, tabular, database,
+or trajectory format? How do you know?</p>
 </div>
 </div>
 </div>
-</section><section><h2 class="section-heading" id="math">Math<a class="anchor" aria-label="anchor" href="#math"></a></h2>
-<hr class="half-width"><p>One of our episodes contains <span class="math inline">\(\LaTeX\)</span> equations when describing how to
-create dynamic reports with {knitr}, so we now use mathjax to describe
-this:</p>
-<p><code>$\alpha = \dfrac{1}{(1 - \beta)^2}$</code> becomes: <span class="math inline">\(\alpha = \dfrac{1}{(1 - \beta)^2}\)</span></p>
-<p>Cool, right?</p>
+<div id="accordionSolution1" class="accordion challenge-accordion accordion-flush">
+<div class="accordion-item">
+<button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
+  <h4 class="accordion-header" id="headingSolution1">
+  Answer
+  </h4>
+</button>
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div class="accordion-body">
+
+</div>
+</div>
+</div>
+</div>
 <div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -481,21 +478,15 @@ this:</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>Use <code>.md</code> files for episodes when you want static
-content</li>
-<li>Use <code>.Rmd</code> files for episodes when you need to generate
-output</li>
-<li>Run <code>sandpaper::check_lesson()</code> to identify any issues
-with your lesson</li>
-<li>Run <code>sandpaper::build_lesson()</code> to preview your lesson
-locally</li>
-</ul></div>
+
+</div>
 </div>
 </div>
 <!--
 Place links that you need to refer to multiple times across pages here. Delete
 any links that you are not going to use.
  -->
+</div>
 </section></div> <!-- / div.lesson-content -->
     </main><!-- / main#main-content.main-content --><nav class="bottom-pagination mx-md-4" aria-label="Previous and Next Chapter Bottom"><div class="d-block d-sm-block d-md-none">
         <a class="chapter-link" href="../instructor/index.html"><i aria-hidden="true" class="small-arrow" data-feather="arrow-left"></i>Previous</a>
