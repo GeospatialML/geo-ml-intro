@@ -33,7 +33,10 @@ including climate change adaptation, natural disaster monitoring, water resource
 management, and food security for a growing global population.
 
 ![Observing the Earth: Greece continues to battle wildfires](fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg){alt="Observing the Earth"}
-Source: [The European Space Agency (ESA), Copernicus Sentinel-2 image](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026)
+
+Observing the Earth: Greece continues to battle wildfires. Source: [The European
+Space Agency (ESA), Copernicus Sentinel-2
+image](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026).
 
 But how do we represent geospatial data? This is what we will explore in this
 lesson. We will discuss the different formats of geospatial data, how geographic
@@ -96,7 +99,7 @@ formats include:
   (.gpx)](https://wiki.openstreetmap.org/wiki/GPX) and [CSV
   (.csv)](https://data.europa.eu/apps/data-visualisation-guide/csv-files).
 
-![Geospatial Data Structures and Formats](fig/e01/Geospatial_Data_Structures_Formats.jpg){alt="Data Structures and Formats"}; license: CC BY-SA 4.0.
+![Geospatial Data Structures and Formats](fig/e01/Geospatial_Data_Structures_Formats.jpg){alt="Data Structures and Formats"} License: CC BY-SA 4.0.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
