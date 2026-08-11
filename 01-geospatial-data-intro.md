@@ -33,7 +33,6 @@ including climate change adaptation, natural disaster monitoring, water resource
 management, and food security for a growing global population.
 
 ![Observing the Earth: Greece continues to battle wildfires](fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg){alt="Observing the Earth"}
-
 Source: [The European Space Agency (ESA), Copernicus Sentinel-2 image](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026)
 
 But how do we represent geospatial data? This is what we will explore in this
@@ -49,71 +48,88 @@ basics of geospatial data and analysis using Python. Make sure that you have
 followed the setup instructions in the [lesson setup](../learners/setup.md) page
 before proceeding.
 
-::::::::::::::::::::::::::::::::::::: challenge
+### Geospatial Data Structures and Formats
 
-## Challenge 1: Can you do it?
+When we talk about formats of geospatial data, we are referring to the different
+ways in which geographic information can be represented. There are several
+formats, each with its own advantages and use cases. Some of the most common
+formats include:
 
-What is the output of this command?
+- **Raster data**: These formats represent geographic information as a grid of
+  cells or pixels, where each cell has a value representing a specific
+  attribute. Sometimes, raster data can be a group of images/bands that
+  represent different attributes of the same geographic area. Common raster
+  formats include [GeoTIFF
+  (.tif)](https://www.earthdata.nasa.gov/about/esdis/esco/standards-practices/geotiff),
+  [NetCDF
+  (.nc)](https://www.earthdata.nasa.gov/about/esdis/esco/standards-practices/netcdf-classic-64-bit-offset-file-formats),
+  and [HDF5 (.hdf5)](https://www.hdfgroup.org/solutions/hdf5/).
 
-```r
-paste("This", "new", "lesson", "looks", "good")
-```
+- **Vector data**: These formats represent geographic features as points, lines,
+  and polygons. Common vector formats include [Shapefiles
+  (.shp)](https://desktop.arcgis.com/en/arcmap/latest/manage-data/shapefiles/what-is-a-shapefile.htm),
+  [GeoJSON (.geojson)](https://geojson.org/), and [KML
+  (.kml)](https://www.ogc.org/standards/kml/).
 
-:::::::::::::::::::::::: solution
+- **Tabular data**: These formats store geographic information in a tabular
+  structure, often with latitude and longitude coordinates. Common tabular
+  formats include [CSV
+  (.csv)](https://data.europa.eu/apps/data-visualisation-guide/csv-files).
 
-## Output
+- **Triangulated Irregular Networks (TINs)**: These formats represent geographic
+  surfaces as a network of interconnected triangles. TINs are often used for
+  representing terrain and elevation data. One of the common TIN formats is [LAS
+  (.las)](https://www.ogc.org/standards/las/).
 
-```output
-[1] "This new lesson looks good"
-```
+- **Point Clouds**: These formats represent geographic features as a collection of
+  points in three-dimensional space. Point clouds are often used for representing
+  3D models of buildings, landscapes, and other objects. Common point cloud
+  formats include [LAS (.las)](https://www.ogc.org/standards/las/).
 
-:::::::::::::::::::::::::::::::::
+- **Databases**: These formats store geographic information in a
+  database, allowing for efficient querying and analysis. Common database
+  formats include [PostGIS (an extension of PostgreSQL)](https://postgis.net/) and [SpatiaLite (an
+  extension of SQLite)](https://www.gaia-gis.it/fossil/libspatialite/index).
 
+- **Trajectories**: These formats store the movement of objects over time, often
+  with timestamps and coordinates. Common trajectory formats include [GPX
+  (.gpx)](https://wiki.openstreetmap.org/wiki/GPX) and [CSV
+  (.csv)](https://data.europa.eu/apps/data-visualisation-guide/csv-files).
 
-## Challenge 2: how do you nest solutions within challenge blocks?
-
-:::::::::::::::::::::::: solution
-
-You can add a line with at least three colons and a `solution` tag.
-
-:::::::::::::::::::::::::::::::::
-::::::::::::::::::::::::::::::::::::::::::::::::
-
-## Figures
-
-You can use standard markdown for static figures with the following syntax:
-
-`![optional caption that appears below the figure](figure url){alt='alt text for
-accessibility purposes'}`
-
-![You belong in The Carpentries!](https://raw.githubusercontent.com/carpentries/logo/master/Badge_Carpentries.svg){alt='Blue Carpentries hex person logo with no text.'}
+![Geospatial Data Structures and Formats](fig/e01/Geospatial_Data_Structures_Formats.jpg){alt="Data Structures and Formats"}; license: CC BY-SA 4.0.
 
 ::::::::::::::::::::::::::::::::::::: callout
 
-Callout sections can highlight information.
+To learn more about raster and vector data, check out these lessons:
 
-They are sometimes used to emphasise particularly important points
-but are also used in some lessons to present "asides":
-content that is not central to the narrative of the lesson,
-e.g. by providing the answer to a commonly-asked question.
+- [Introduction to Raster
+  Data](https://esciencecenter-digital-skills.github.io/geospatial-python/01-intro-raster-data.html).
+- [Introduction to Vector
+Data](https://esciencecenter-digital-skills.github.io/geospatial-python/02-intro-vector-data.html).
+
+::::::::::::::::::::::::::::::::::::::::::::::::
+
+::::::::::::::::::::::::::::::::::::: challenge
+
+## Challenge 1: the format of our dataset
+
+Look at [the dataset](../learners/setup.md) we will be using in this lesson.
+What format is it in? Is it a raster, vector, tabular, database, or trajectory
+format? How do you know?
+
+:::::::::::::::::::::::: solution
+
+## Answer
+
+:::::::::::::::::::::::::
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
 
 
-## Math
 
-One of our episodes contains $\LaTeX$ equations when describing how to create
-dynamic reports with {knitr}, so we now use mathjax to describe this:
 
-`$\alpha = \dfrac{1}{(1 - \beta)^2}$` becomes: $\alpha = \dfrac{1}{(1 - \beta)^2}$
-
-Cool, right?
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-- Use `.md` files for episodes when you want static content
-- Use `.Rmd` files for episodes when you need to generate output
-- Run `sandpaper::check_lesson()` to identify any issues with your lesson
-- Run `sandpaper::build_lesson()` to preview your lesson locally
 
 ::::::::::::::::::::::::::::::::::::::::::::::::
