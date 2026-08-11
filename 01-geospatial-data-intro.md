@@ -32,10 +32,10 @@ relationships and is invaluable for solving some of the greatest challenges,
 including climate change adaptation, natural disaster monitoring, water resource
 management, and food security for a growing global population.
 
-![Observing the Earth: Greece continues to battle wildfires](fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg){alt="Observing the Earth"}
-
-Observing the Earth: Greece continues to battle wildfires. Source: [The European
-Space Agency (ESA), Copernicus Sentinel-2
+![Observing the Earth: Greece continues to battle
+wildfires](fig/e01/Greece_continues_to_battle_wildfires_pillars.jpg){alt="Observing
+the Earth"}
+Source: [The European Space Agency (ESA), Copernicus Sentinel-2
 image](https://www.esa.int/Applications/Observing_the_Earth/FutureEO/Space_for_our_climate/Wildfires_drought_and_extreme_heat_2026).
 
 But how do we represent geospatial data? This is what we will explore in this
@@ -51,7 +51,7 @@ basics of geospatial data and analysis using Python. Make sure that you have
 followed the setup instructions in the [lesson setup](../learners/setup.md) page
 before proceeding.
 
-## Geospatial Data Structures and Formats
+## Geospatial data Structures and Formats
 
 When we talk about formats of geospatial data, we are referring to the different
 ways in which geographic information can be represented. There are several
